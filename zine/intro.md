@@ -1,6 +1,6 @@
 # Intro
 
-Welcome to my zine, carefully curated by the editor—written across timelines. Git is my time machine, each commit a page in history.
+Welcome to my zineâ€”written across galaxies and carefully curated by the editor. Git is my time machine, each commit a page in history.
 
 
 ## Table of Contents
