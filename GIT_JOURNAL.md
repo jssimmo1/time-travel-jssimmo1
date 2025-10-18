@@ -1,0 +1,1 @@
+I learned branch/PR workflow, closing issues from PRs, and resolving merge conflicts. Two mistakes: committing on main and pasting curly quotes in PowerShell. The lifesaver was atomic commits plus rebasing before push; annotated tags clearly marked the stable release.
