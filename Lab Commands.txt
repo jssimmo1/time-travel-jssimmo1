@@ -1,0 +1,102 @@
+1.1 - No commands used, just created the repository on GitHub
+
+1.2:
+- git clone https://github.com/jssimmo1/time-travel-jssimmo1.git
+- cd .\time-travel-jssimmo1\
+- New-Item -ItemType File README.md -Force | Out-Null
+- notepad README.md
+- git add README.md
+- git commit -m "Adding a README talking about my concept"
+- git branch -M main
+- git push -u origin main
+
+1.3:
+- New-Item -ItemType File zine\.gitkeep -Force | Out-Null
+- git add zine\.gitkeep
+- git commit -m "Adding zine folder with placeholder"
+- git push
+
+1.4:
+- Set-Content zine/intro.md "# Intro`n`nWelcome to my zine. Git is my time machine, each commit a page in history."
+- git add zine/intro.md
+- git commit -m "Adding intro with time machine phrase in it."
+- git push
+
+1.5:
+- Set-Content .gitignore "# OS`n.DS_Store`nThumbs.db`n`n# Editors`n.vscode/`n.idea/"
+- Add-Content README.md "`n**Why these .gitignore patterns?** They exclude OS/editor junk so commits stay clean."
+- git add .gitignore README.md
+- git commit -m "Adding .gitignore and explanation for what's included in the .gitignore in README"
+- git push
+
+1.6 - No commands used, just used GitHub directly and used the provided templates to create the 2 files.
+
+1.7:
+- git checkout -b author/idea-sprint
+- git push -u origin author/idea-sprint
+- git checkout main
+- git checkout -b editor/review
+- git push -u origin editor/review
+- git checkout main
+- Add-Content README.md "`n**Branches**`n- author/idea-sprint: draft new writing and ideas`n- editor/review: editing, layout, quality checks"
+- git add README.md
+- git commit -m "Creating the two branches and andding explanations of those two branches in README.md"
+- git push
+- git pull origin main --rebase
+- git push origin main
+
+1.8:
+- No commands used, just used GitHub directly to create the three issues.
+
+1.9:
+- git checkout -b feat/content
+- Add-Content zine/intro.md "`n`n## Table of Contents`n- Intro`n- How Git is a time machine"
+- git add zine/intro.md
+- git commit -m "Add table of contents to intro"
+- git push -u origin feat/content
+- git checkout -b feat/layout
+- Set-Content zine/layout.md "# Layout Notes`n`n- Use H1 for sections`n- Two-line paragraphs max"
+- git add zine/layout.md
+- git commit -m "Add initial layout notes"
+- git push -u origin feat/layout
+- git checkout -b feat/polish
+- Add-Content zine/intro.md "`n`n_Final line: thanks for reading!_"
+- git add zine/intro.md
+- git commit -m "Tidy spacing and add closing line"
+- git push -u origin feat/polish
+
+1.10 - No commands necessary
+
+1.11:
+- Too many commands but I posted pictures of all the commands I used in my pdf.
+
+1.12:
+- git checkout main
+- git pull origin main
+- git tag v0.1
+- git push origin v0.1
+- git tag -a v1.0 -m "Initial zine release: content, layout, polish; merge-conflict resolved"
+- git push origin v1.0
+
+1.13:
+- Set-Content RELEASE_NOTES.md "# v1.0 – Initial Release"
+- Add-Content RELEASE_NOTES.md "`n`n## Highlights"
+- Add-Content RELEASE_NOTES.md "`n- Content: added Table of Contents to intro (PR #1)"
+- Add-Content RELEASE_NOTES.md "`n- Layout: created layout notes (PR #2)"
+- Add-Content RELEASE_NOTES.md "`n- Polish: tightened spacing/closing line (PR #3)"
+- Add-Content RELEASE_NOTES.md "`n`n## Merge Conflict Resolved"
+- Add-Content RELEASE_NOTES.md "`n- Combined author/editor openings in \`zine/intro.md\` via PR merge."
+- Add-Content RELEASE_NOTES.md "`n`n## Housekeeping"
+- Add-Content RELEASE_NOTES.md "`n- Added \`.gitignore\` for OS/editor junk"
+- Add-Content RELEASE_NOTES.md "`n- Added LICENSE (MIT) and CODE_OF_CONDUCT.md"
+- Add-Content RELEASE_NOTES.md "`n`n## Tags"
+- Add-Content RELEASE_NOTES.md "`n- v0.1 (lightweight) and v1.0 (annotated)"
+- git add RELEASE_NOTES.md
+- git commit -m "docs(release): add v1.0 release notes" -m "References content/layout/polish PRs and conflict resolution."
+- git push
+
+1.14:
+- Set-Content GIT_JOURNAL.md "I learned branch/PR workflow, closing issues from PRs, and resolving merge conflicts. Two mistakes: committing on main and pasting curly quotes in PowerShell. The lifesaver was atomic commits plus rebasing before push; annotated tags clearly marked the stable release."
+- git add GIT_JOURNAL.md
+- git commit -m "docs: add short learning journal"
+- git push
